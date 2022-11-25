@@ -13,7 +13,6 @@ function StarRating($container) {
     $container
       .querySelectorAll(".bx")
       [i].addEventListener("mouseover", function () {
-        console.log(i);
         for (let j = 0; j < i + 1; j++) {
           $container.querySelectorAll(".bx")[j].classList.add("hovered");
         }
