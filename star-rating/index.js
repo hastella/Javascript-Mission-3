@@ -3,6 +3,8 @@ function StarRating($container) {
   $container.classList.add("star-rating-container");
   let starNum = $container.dataset.maxRating;
 
+  // star는 박스 아이콘으로 구현한다
+  // <i class='bx bxs-star'></i>
   let count = 0;
   for (let i = 0; i < starNum; i++) {
     let icon = document.createElement("i");
